@@ -1,7 +1,53 @@
 ---
 import Layout from '../layouts/Layout.astro'; 
+import memoji from '../assets/memoji-laptop.png'; 
+
+const updates = { 
+    'Employment': "job search status", 
+    'Projects': "project I'm working on", 
+    'Learning': "tech I'm learning", 
+    'Family': "family highlight", 
+    'Celebrating': "something I'm celebrating", 
+    'Rabbit hole': "current rabbit hole I'm in", 
+}
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+const date = new Date(); 
+const lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`; 
 ---
 
 <Layout> 
-    <h1 class="text-3xl font-bold underline">Hello World!</h1>
+    <div >
+        <img src={memoji} />
+        <div >
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non diam phasellus vestibulum lorem sed risus ultricies. Est ante in nibh mauris cursus mattis. Viverra adipiscing at in tellus integer feugiat scelerisque. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse. Tellus in hac habitasse platea dictumst vestibulum. Hac habitasse platea dictumst quisque sagittis purus sit amet. Varius duis at consectetur lorem. Pulvinar elementum integer enim neque volutpat ac. Arcu odio ut sem nulla pharetra diam sit.
+            </p>
+            <p>
+                Ut tristique et egestas quis. Laoreet suspendisse interdum consectetur libero id faucibus. Et malesuada fames ac turpis egestas sed tempus urna.
+            </p>
+        </div>
+        <div >
+            <h2 >
+                What I'm up to:
+            </h2>
+
+            <ul >
+                {
+                    Object.keys(updates).map(title => { 
+                        const description = updates[title]; 
+                        return <li ><span >{title}: </span>{description}</li>
+                    })
+                }
+            </ul>
+            <p class="px-3 py-2">
+                <span >Last updated: </span><span >{lastUpdated}</span>
+            </p>
+        </div>
+    </div>
+
+
 </Layout>
