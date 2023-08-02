@@ -1,6 +1,11 @@
 ---
+export interface Props { 
+    title?: string;
+    headerMessage?: string; 
+}
+
 import Header from "../components/Header.astro";
-const { title, headerMessage } = Astro.props; 
+const { title = "Jon Granados - Engineer", headerMessage } = Astro.props as Props; 
 ---
 
 <!DOCTYPE html>
