@@ -20,9 +20,9 @@ const lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
 ---
 
 <Layout> 
-    <div >
-        <img src={memoji} />
-        <div >
+    <div class="flex flex-col gap-6 justify-center items-center px-5 py-12 font-montserrat text-base/snug">
+        <img src={memoji} class="w-20 rounded-2xl border-[3px] border-black bg-[#F2F2F2]"/>
+        <div class="flex flex-col gap-4 text-justify">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non diam phasellus vestibulum lorem sed risus ultricies. Est ante in nibh mauris cursus mattis. Viverra adipiscing at in tellus integer feugiat scelerisque. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse. Tellus in hac habitasse platea dictumst vestibulum. Hac habitasse platea dictumst quisque sagittis purus sit amet. Varius duis at consectetur lorem. Pulvinar elementum integer enim neque volutpat ac. Arcu odio ut sem nulla pharetra diam sit.
             </p>
@@ -30,21 +30,21 @@ const lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
                 Ut tristique et egestas quis. Laoreet suspendisse interdum consectetur libero id faucibus. Et malesuada fames ac turpis egestas sed tempus urna.
             </p>
         </div>
-        <div >
-            <h2 >
+        <div class="flex flex-col w-full border-[3px] border-black rounded-xl bg-[#F2F2F2]">
+            <h2 class="px-3 py-1 font-bayon text-xl">
                 What I'm up to:
             </h2>
 
-            <ul >
+            <ul class="list-disc list-inside px-5">
                 {
                     Object.keys(updates).map(title => { 
                         const description = updates[title]; 
-                        return <li ><span >{title}: </span>{description}</li>
+                        return <li class="relative before:-ml-3 py-1"><span class='font-bayon'>{title}: </span>{description}</li>
                     })
                 }
             </ul>
-            <p class="px-3 py-2">
-                <span >Last updated: </span><span >{lastUpdated}</span>
+            <p class="px-3 py-1">
+                <span class='font-bayon'>Last updated: </span><span class="underline">{lastUpdated}</span>
             </p>
         </div>
     </div>
