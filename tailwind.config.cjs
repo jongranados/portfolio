@@ -7,6 +7,9 @@ module.exports = {
 			bayon: ["Bayon", "sans-serif"],
 			montserrat: ["Montserrat", "sans-serif"],
 		},
+		backgroundImage: {
+			placeholder: "url('./src/assets/placeholder.png')",
+		},
 	},
 	plugins: [],
 };
