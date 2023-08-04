@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon";
+---
+<div
+	class="relative ml-[10px] mb-[10px] max-w-[500px] border-[3px] border-black rounded-xl bg-white"
+>
+	<div
+		class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-10]"
+	>
+	</div>
+
+	<div
+		class="relative content-[''] mx-[10%] mt-[10%] aspect-[5/3] border-x-[3px] border-t-[3px] border-black bg-placeholder bg-cover bg-top bg-no-repeat"
+	>
+		<div
+			class="absolute flex flex-row justify-between items-center left-0 right-0 bottom-0 mx-auto translate-y-[50%] max-w-[300px] max-h-[100px] w-min border-[3px] bg-white rounded-full border-black"
+		>
+			<a
+				href=""
+				class="w-8 h-8 rounded-full m-1 p-1 bg-yellow border-[2px] border-black"
+			>
+				<Icon name="mdi:play" />
+			</a>
+			<a
+				href=""
+				class="w-8 h-8 rounded-full m-1 p-1 bg-yellow border-[2px] border-black"
+			>
+				<Icon name="raphael:github" />
+			</a>
+		</div>
+	</div>
+
+	<div class="m-0 h-1/2 border-t-[3px] border-black">
+		<div class="font-montserrat leading-snug pt-5 pb-2 px-5">
+			<h3 class="font-bayon text-lg">Title</h3>
+			<p>A sentence or two briefly describing the project.</p>
+			<p>• • • • •</p>
+			<p>
+				Tech A • Tech B • Tech C • Tech D • Tech E • Tech F • Tech G •
+				Tech H • Tech I • Tech J • Tech I • Tech K
+			</p>
+		</div>
+	</div>
+</div>
