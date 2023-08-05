@@ -159,10 +159,13 @@ import Layout from "../layouts/Layout.astro";
 					this riddle that I collabed with ChatGPT on.
 				</p>
 			</div>
-			<div class="relative w-14 h-14 translate-y-[50%] mx-auto p-2 rounded-full text-yellow bg-black">
+			<div class="relative w-14 h-14 translate-y-[50%] mx-auto p-2 rounded-full text-yellow bg-black z-[1]">
 				<Icon name="mdi:egg-easter"/>
 			</div>
-			<div class="border-[3px] border-black px-5 py-10 rounded-xl space-y-5 font-dmMono text-left">
+			<div class="relative ml-[10px] mb-[10px] border-[3px] border-black px-5 py-10 rounded-xl space-y-5 font-dmMono text-left bg-white">
+				<div
+					class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
+				/>
 				<p>
 					Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,
 				</p>
