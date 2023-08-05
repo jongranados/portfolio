@@ -13,6 +13,7 @@ module.exports = {
 		fontFamily: {
 			bayon: ["Bayon", "sans-serif"],
 			montserrat: ["Montserrat", "sans-serif"],
+			dmMono: ["DM Mono", "courier", "serif"],
 		},
 		backgroundImage: {
 			placeholder: "url('./src/assets/placeholder.png')",
