@@ -16,6 +16,7 @@ module.exports = {
 		},
 		backgroundImage: {
 			placeholder: "url('./src/assets/placeholder.png')",
+			tenWords: "url('./src/assets/ten-words.jpeg')",
 		},
 	},
 	plugins: [],
