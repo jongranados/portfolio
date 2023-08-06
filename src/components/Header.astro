@@ -14,12 +14,12 @@ const { headerMessage } = Astro.props;
             <Icon class='' name="mdi:menu" />
         </button>
 
-        <div> 
-            <a href="/projects">Projects</a>
-            <hr/>
-            <a href="/toolbox">Toolbox</a>
-            <hr/>
-            <a href="/about">About</a>
+        <div class="absolute border-[3px] right-0 bottom-0 translate-y-[96%] font-bayon text-3xl flex flex-col border-black bg-white rounded-xl shadow-xl"> 
+            <a href="/projects" class="px-4 py-2">Projects</a>
+            <hr style="border-top: dashed 2px;"  class="mx-auto w-[85%] text-yellow" />
+            <a href="/toolbox" class="px-4 py-2">Toolbox</a>
+            <hr style="border-top: dashed 2px;"  class="mx-auto w-[85%] text-yellow" />
+            <a href="/about" class="px-4 py-2">About</a>
         </div>
     </div>
 </header>
