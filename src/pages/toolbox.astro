@@ -10,39 +10,43 @@ import { Icon } from "astro-icon";
             <h2 class="font-montserrat text-base">The tools I build things with.</h2>
         </div>
 
-        <div>
-            <div>
-                <div>
-                    <Icon name="ph:code-bold" /><span>Code</span>
+        <div class="mx-5 flex flex-col items-center gap-5 border">
+            <div class="w-full border border-red-500">
+                <div class="flex flex-row gap-2 items-center border">
+                    <Icon
+                        name="ph:code-bold"
+                        class="w-6 h-6 p-1.5 bg-black text-white rounded-full"
+                    /><span class="font-bayon">Code</span>
                 </div>
 
-                <div>
-
-                </div>
+                <div class="w-full aspect-square border-[3px] border-black rounded-3xl"></div>
             </div>
 
-            <Divider /> 
+            <Divider />
 
-            <div>
-                <div>
-                    <Icon name="mdi:pencil" /><span>Design</span>
+            <div class="w-full border border-red-500">
+                <div class="flex flex-row gap-2 items-center border">
+                    <Icon
+                        name="mdi:pencil"
+                        class="w-6 h-6 p-1.5 bg-black text-white rounded-full"
+                    /><span class="font-bayon">Design</span>
                 </div>
 
-                <div>
-
-                </div>
+                <div class="w-full aspect-square border-[3px] border-black rounded-3xl"></div>
             </div>
 
-            <Divider /> 
+            <Divider />
 
-            <div>
-                <div>
-                    <Icon name="mdi:tools" /><span>Hardware</span>
+            <div class="w-full border border-red-500">
+                <div class="flex flex-row gap-2 items-center border">
+                    <Icon
+                        name="mdi:tools"
+                        class="w-6 h-6 p-1.5 bg-black text-white rounded-full"
+                    /><span class="font-bayon">Hardware</span>
                 </div>
 
-                <div>
-
-                </div>
+                <div class="w-full aspect-square border-[3px] border-black rounded-3xl"></div>
             </div>
         </div>
+
 </Layout>
