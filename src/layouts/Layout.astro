@@ -5,6 +5,7 @@ export interface Props {
 }
 
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 const { title = "Jon Granados - Engineer", headerMessage } = Astro.props as Props; 
 ---
 
@@ -22,5 +23,6 @@ const { title = "Jon Granados - Engineer", headerMessage } = Astro.props as Prop
 	<body> 
         <Header headerMessage={headerMessage}/>
         <slot />
+        <Footer />
     </body>
 </html>
