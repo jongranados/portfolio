@@ -30,7 +30,11 @@ const lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
                 Ut tristique et egestas quis. Laoreet suspendisse interdum consectetur libero id faucibus. Et malesuada fames ac turpis egestas sed tempus urna.
             </p>
         </div>
-        <div class="flex flex-col w-full border-[3px] border-black rounded-xl bg-grey">
+        <div class="relative ml-[10px] mb-[10px] flex flex-col w-full border-[3px] border-black rounded-xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
+            <div
+                class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
+            >
+            </div>
             <h2 class="px-3 py-1 font-bayon text-xl">
                 What I'm up to:
             </h2>
