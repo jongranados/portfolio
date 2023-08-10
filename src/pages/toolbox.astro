@@ -11,7 +11,7 @@ import { Icon } from "astro-icon";
         </div>
 
         <div class="mx-5 flex flex-col items-center gap-5">
-            <div class="w-full">
+            <div class="max-w-full w-max">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="mdi:language"
@@ -19,30 +19,30 @@ import { Icon } from "astro-icon";
                     /><span class="font-bayon">Programming Languages</span>
                 </div>
 
-                <div class="relative ml-[10px] mb-[10px] aspect-square border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
+                <div class="relative flex flex-row justify-center items-start flex-wrap ml-[10px] mb-[10px] p-4 gap-4 border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
                     <div
                         class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-3xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
                     ></div>
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-javascript-plain"></i>
-                        <p>JavaScript</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-javascript-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">JavaScript</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-typescript-plain"></i>
-                        <p>TypeScript</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-typescript-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">TypeScript</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-python-plain"></i>
-                        <p>Python</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-python-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Python</p>
                     </div>
                 </div>
             </div>
 
             <Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl" />
 
-            <div class="w-full">
+            <div class="max-w-full w-max">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="healthicons:ui-menu-grid-outline"
@@ -50,58 +50,58 @@ import { Icon } from "astro-icon";
                     /><span class="font-bayon">Frontend</span>
                 </div>
 
-                <div class="relative ml-[10px] mb-[10px] aspect-square border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
+                <div class="relative flex flex-row justify-center items-start flex-wrap ml-[10px] mb-[10px] p-4 gap-4 border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
                     <div
                         class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-3xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
                     ></div>
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-react-plain"></i>
-                        <p>React</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-react-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">React</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-html5-plain"></i>
-                        <p>HTML</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-html5-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">HTML</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-css3-plain"></i>
-                        <p>CSS</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-css3-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">CSS</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-css3-plain"></i>
-                        <p>CSS</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-css3-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">CSS</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-tailwindcss-plain"></i>
-                        <p>Tailwind CSS</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-tailwindcss-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Tailwind CSS</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-materialui-plain"></i>
-                        <p>Material-UI</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-materialui-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Material-UI</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-bootstrap-plain"></i>
-                        <p>Bootstrap</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-bootstrap-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Bootstrap</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <svg class="h-4 fill-black" viewBox="0 0 63 79" xmlns="http://www.w3.org/2000/svg">
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <svg class="h-[50px] pt-1 fill-black" viewBox="0 0 63 79" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.4924 65.9282C15.6165 62.432 14.4851 55.0859 16.0999 49.7638C18.8998 53.1193 22.7793 54.1822 26.7977 54.7822C33.0013 55.7081 39.0937 55.3618 44.8565 52.5637C45.5158 52.2434 46.125 51.8174 46.8454 51.386C47.3861 52.9341 47.5268 54.497 47.338 56.0877C46.8787 59.9617 44.9251 62.9542 41.8177 65.2227C40.5752 66.13 39.2604 66.9411 37.9771 67.7967C34.0346 70.4262 32.9679 73.5095 34.4494 77.9946C34.4846 78.1038 34.5161 78.2131 34.5957 78.4797C32.5828 77.5909 31.1124 76.2965 29.9921 74.5946C28.8088 72.7984 28.2458 70.8114 28.2162 68.6615C28.2014 67.6152 28.2014 66.5597 28.0588 65.5282C27.7107 63.0135 26.5144 61.8876 24.2608 61.8227C21.9479 61.7561 20.1183 63.1672 19.6331 65.3893C19.5961 65.5597 19.5424 65.7282 19.4887 65.9263L19.4924 65.9282Z"/>
                             <path d="M0 51.3932C0 51.3932 10.5979 46.2433 21.2254 46.2433L29.2382 21.5069C29.5381 20.3106 30.4141 19.4977 31.4029 19.4977C32.3918 19.4977 33.2677 20.3106 33.5677 21.5069L41.5804 46.2433C54.1672 46.2433 62.8058 51.3932 62.8058 51.3932C62.8058 51.3932 44.8044 2.47586 44.7692 2.37772C44.2526 0.931458 43.3804 0 42.2045 0H20.6032C19.4273 0 18.5903 0.931458 18.0384 2.37772C17.9995 2.47401 0 51.3932 0 51.3932Z"/>
                         </svg>
-                        <p>Astro</p>
+                        <p class="font-montserrat text-center leading-none">Astro</p>
                     </div>
                 </div>
             </div>
 
             <Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl" />
 
-            <div class="w-full">
+            <div class="max-w-full w-max">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="mdi:database-outline"
@@ -109,50 +109,50 @@ import { Icon } from "astro-icon";
                     /><span class="font-bayon">Backend</span>
                 </div>
 
-                <div class="relative ml-[10px] mb-[10px] aspect-square border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
+                <div class="relative flex flex-row justify-center items-start flex-wrap ml-[10px] mb-[10px] p-4 gap-4 border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
                     <div
                         class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-3xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
                     ></div>
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-express-original"></i>
-                        <p>Express</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-express-original text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Express</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-postgresql-plain"></i>
-                        <p>PostgreSQL</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-postgresql-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">PostgreSQL</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-mysql-plain"></i>
-                        <p>MySQL</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-mysql-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">MySQL</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-firebase-plain"></i>
-                        <p>Firebase</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-firebase-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Firebase</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-sqlite-plain"></i>
-                        <p>SQLite</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-sqlite-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">SQLite</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-mongodb-plain"></i>
-                        <p>MongoDB</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-mongodb-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">MongoDB</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-sequelize-plain"></i>
-                        <p>Sequelize</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-sequelize-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Sequelize</p>
                     </div>
                 </div>
             </div>
 
             <Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl" />
             
-            <div class="w-full">
+            <div class="max-w-full w-max">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="mdi:design"
@@ -160,44 +160,44 @@ import { Icon } from "astro-icon";
                     /><span class="font-bayon">Design</span>
                 </div>
 
-                <div class="relative ml-[10px] mb-[10px] aspect-square border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
+                <div class="relative flex flex-row justify-center items-start flex-wrap ml-[10px] mb-[10px] p-4 gap-4 border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
                     <div
                         class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-3xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
                     ></div>
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-figma-plain"></i>
-                        <p>Figma</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-figma-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Figma</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-illustrator-plain"></i>
-                        <p>Adobe Illustrator</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-illustrator-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Adobe Illustrator</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-xd-plain"></i>
-                        <p>Adobe XD</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-xd-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Adobe XD</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <svg class="h-4 fill-black" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <svg class="h-[50px] fill-black" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                             <path d="M28.26,5.13L15.58,1.18c-0.39-0.12-0.81-0.12-1.19,0L1.7,5.13C1.28,5.26,1,5.65,1,6.09v17.44c0,0.41,0.24,0.77,0.62,0.93	l12.6,5.22c0.49,0.21,1.04,0.21,1.53,0l12.6-5.22c0.37-0.16,0.61-0.52,0.61-0.93V6.09C28.96,5.65,28.68,5.26,28.26,5.13z M6.91,15.22c0.31,0.38,0.78,0.8,1.42,1.26c0.5,0.36,0.94,0.72,1.31,1.08c0.37,0.36,0.68,0.73,0.93,1.11	c0.25,0.38,0.43,0.78,0.55,1.19c0.12,0.42,0.18,0.86,0.18,1.33c0,0.49-0.07,0.91-0.23,1.25c-0.15,0.34-0.37,0.6-0.65,0.77	c-0.28,0.18-0.62,0.26-1.01,0.26c-0.4,0.01-0.83-0.08-1.31-0.26c-0.43-0.15-0.85-0.38-1.26-0.68c-0.41-0.3-0.77-0.66-1.09-1.08	c-0.33-0.42-0.58-0.88-0.78-1.4c-0.19-0.52-0.29-1.08-0.29-1.68l1.5,0.52c0,0.36,0.05,0.69,0.15,0.99c0.1,0.29,0.23,0.55,0.4,0.78	c0.17,0.22,0.37,0.42,0.61,0.58c0.23,0.16,0.48,0.29,0.76,0.38c0.53,0.2,0.94,0.2,1.21,0.01c0.28-0.18,0.41-0.51,0.41-0.98	c0-0.24-0.02-0.45-0.08-0.66c-0.05-0.2-0.15-0.4-0.29-0.61c-0.14-0.2-0.34-0.41-0.58-0.64c-0.25-0.23-0.57-0.48-0.95-0.77	c-0.42-0.3-0.81-0.62-1.16-0.95C6.3,16.69,6,16.34,5.75,15.98c-0.25-0.36-0.45-0.75-0.59-1.15c-0.14-0.41-0.21-0.85-0.21-1.31	s0.07-0.86,0.22-1.19c0.15-0.34,0.35-0.61,0.62-0.81c0.28-0.2,0.6-0.32,0.98-0.36c0.38-0.04,0.81,0.02,1.27,0.16	c0.5,0.15,0.95,0.39,1.36,0.7c0.4,0.32,0.74,0.68,1.02,1.09c0.29,0.42,0.5,0.87,0.65,1.35c0.15,0.48,0.23,0.96,0.23,1.45L9.72,15.4	c0-0.28-0.03-0.55-0.1-0.81s-0.17-0.5-0.31-0.72c-0.14-0.22-0.32-0.41-0.53-0.57c-0.21-0.16-0.46-0.29-0.75-0.38	c-0.27-0.09-0.51-0.12-0.7-0.11c-0.2,0.02-0.37,0.08-0.5,0.18c-0.13,0.1-0.22,0.24-0.28,0.41c-0.07,0.18-0.1,0.38-0.1,0.6	C6.45,14.43,6.61,14.83,6.91,15.22z M24.96,21.84l-1.31,0.53l-1.53-7.92l-1.59,9.19l-1.39,0.56l-1.95-11.23l1.46-0.5l1.3,8.46	l1.57-9.44l1.18-0.4l1.51,8.19l1.21-9.12l1.34-0.46L24.96,21.84z"/>
                         </svg>
-                        <p>Solidworks CAD</p>
+                        <p class="font-montserrat text-center leading-none">Solidworks CAD</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <svg class="h-4 fill-black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <svg class="h-[50px] fill-black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="m14.574 1.0203c-0.097-0.096997-0.29099-0.58198-0.97097-0.58198h-6.7038s0.97097 0.096997 1.36 1.068c0 0 1.069 2.5269 2.0399 4.9558 2.8179 6.6068 7.1898 17.099 7.1898 17.099h6.5108c0.097-0.097-9.3267-22.443-9.4247-22.54zm-8.8407 0.87497-5.3438 12.631c-0.29199 0.87497-0.097997 1.9439 1.457 1.9439h4.1779l3.6919-8.8417c-1.166-2.9149-2.1359-5.2478-2.1359-5.2478-0.096997-0.29199-0.38899-1.069-0.97197-1.069-0.58298 0-0.77698 0.48598-0.87397 0.58298zm-0.097997 15.643h-4.4689c-0.77698 0-1.166-0.48598-1.166-0.48598 0.77698 1.36 3.0119 5.6358 3.0119 5.6358 0.38899 0.48598 0.77698 0.77698 1.36 0.77698 1.263 0 3.2069-1.263 3.2069-1.263l7.4808-4.6639z"/>
                         </svg>
-                        <p>Autodesk Inventor CAD</p>
+                        <p class="font-montserrat text-center leading-none">Autodesk Inventor</p>
                     </div>
                 </div>
             </div>
 
             <Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl" />
 
-            <div class="w-full">
+            <div class="max-w-full w-max">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="uit:ellipsis-h"
@@ -205,39 +205,39 @@ import { Icon } from "astro-icon";
                     /><span class="font-bayon">Other</span>
                 </div>
 
-                <div class="relative ml-[10px] mb-[10px] aspect-square border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
+                <div class="relative flex flex-row justify-center items-start flex-wrap ml-[10px] mb-[10px] p-4 gap-4 border-[3px] border-black rounded-3xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
                     <div
                         class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-3xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
                     ></div>
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-nodejs-plain"></i>
-                        <p>Node</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-nodejs-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Node.js</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-git-plain"></i>
-                        <p>Git</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-git-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Git</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-github-plain"></i>
-                        <p>Github</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-github-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Github</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-mocha-plain"></i>
-                        <p>Mocha</p>
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-mocha-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Mocha</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <svg class="w-4" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <svg class="h-[50px]" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22.224 5.831 12.23.061a.462.462 0 0 0-.462 0l-9.992 5.77a.462.462 0 0 0-.231.4v11.538c0 .165.088.318.23.4l9.993 5.77a.462.462 0 0 0 .462 0l9.993-5.77a.462.462 0 0 0 .23-.4V6.231a.462.462 0 0 0-.23-.4zm-.63 11.707L12 23.078l-9.593-5.539V6.462L12 .923l9.593 5.539v11.076zM11.295 8.186c.387-.277.792-.497 1.213-.659s.843-.243 1.263-.243c.26 0 .502.038.727.113.225.076.42.185.584.328s.294.32.39.532c.094.212.142.454.142.727 0 .329-.065.656-.195.98-.13.325-.304.625-.522.902s-.47.52-.756.727-.582.357-.89.448l-.136-.227a2.087 2.087 0 0 0 .5-.35 2.275 2.275 0 0 0 .39-.484c.108-.18.19-.37.25-.571a2.19 2.19 0 0 0 .087-.614c0-.238-.035-.463-.104-.675a1.626 1.626 0 0 0-.305-.555 1.426 1.426 0 0 0-.496-.373 1.602 1.602 0 0 0-.679-.136c-.311 0-.597.06-.856.182-.26.12-.494.284-.701.49s-.389.44-.542.707a4.874 4.874 0 0 0-.383.837 5.617 5.617 0 0 0-.23.886 4.292 4.292 0 0 0 .007 1.675c.055.285.138.567.246.844.108.277.242.538.402.785.16.247.345.463.555.649a2.583 2.583 0 0 0 .7.445c.258.11.539.165.841.165.208 0 .41-.028.607-.084a2.987 2.987 0 0 0 .568-.228 3.21 3.21 0 0 0 .516-.337 3.967 3.967 0 0 0 .451-.422l.215.208c-.19.25-.417.492-.679.723a5.543 5.543 0 0 1-.847.617 4.624 4.624 0 0 1-.95.428 3.21 3.21 0 0 1-.984.16 2.41 2.41 0 0 1-.892-.166c-.28-.11-.536-.26-.77-.448s-.442-.409-.626-.662c-.183-.253-.34-.522-.467-.808s-.225-.58-.292-.883-.101-.599-.101-.889c0-.42.07-.851.21-1.295s.335-.874.582-1.291.537-.813.873-1.185a6.721 6.721 0 0 1 1.084-.973z"/>
                         </svg>
-                        <p>Chai</p>
+                        <p class="font-montserrat text-center leading-none">Chai</p>
                     </div>
 
-                    <div class="border-2 border-yellow">
-                        <svg class="h-4 " viewBox="0 0 256 256" f xmlns="http://www.w3.org/2000/svg">
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <svg class="h-[50px]" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
                                 id="SVGRepo_tracerCarrier"
                                 stroke-linecap="round"
@@ -353,12 +353,12 @@ import { Icon } from "astro-icon";
                                 </g>
                             </g>
                         </svg>
-                        <p>Postman</p>
+                        <p class="font-montserrat text-center leading-none">Postman</p>
                     </div>
-                    
-                    <div class="border-2 border-yellow">
-                        <i class="devicon-codepen-plain"></i>
-                        <p>Codepen</p>
+
+                    <div class="flex flex-col justify-between items-center p-2 gap-2 w-[105px] h-[105px] border-[3px] border-black rounded-xl bg-white">
+                        <i class="devicon-codepen-plain text-[50px]"></i>
+                        <p class="font-montserrat text-center leading-none">Codepen</p>
                     </div>
                 </div>
             </div>
