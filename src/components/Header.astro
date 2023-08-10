@@ -10,11 +10,11 @@ const { headerMessage } = Astro.props;
         <p class="font-bayon text-base">
             {headerMessage}
         </p>
-        <button class="w-8 h-8 m-2 p-1 rounded-full bg-yellow border-[2px] border-black">
+        <button id="mobile-menu-button" class="relative w-8 h-8 m-2 p-1 rounded-full bg-yellow border-[2px] border-black">
             <Icon class='' name="mdi:menu" />
         </button>
 
-        <div class="absolute border-[3px] right-0 bottom-0 translate-y-[96%] font-bayon text-3xl flex flex-col border-black bg-white rounded-xl shadow-xl"> 
+        <div id="mobile-menu" class="absolute right-0 bottom-0 translate-y-[96%] border-[3px] font-bayon text-3xl hidden flex-col border-black bg-white rounded-xl shadow-xl"> 
             <a href="/projects" class="px-4 py-2">Projects</a>
             <hr style="border-top: dashed 2px;"  class="mx-auto w-[85%] text-yellow" />
             <a href="/toolbox" class="px-4 py-2">Toolbox</a>
@@ -23,3 +23,14 @@ const { headerMessage } = Astro.props;
         </div>
     </div>
 </header>
+
+<script>
+    const mobileMenuButton = document.getElementById("mobile-menu-button"); 
+    mobileMenuButton.addEventListener("click", toggleMobileMenu); 
+    
+    function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+    }
+</script>
