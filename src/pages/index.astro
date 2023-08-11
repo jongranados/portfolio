@@ -22,6 +22,13 @@ const lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
 <Layout headerMessage="Hey Oh! I'm Jon. 👋"> 
     <div class="flex flex-col gap-6 justify-center items-center px-5 py-12 font-montserrat text-base/snug">
         <img src={memoji} class="w-20 rounded-2xl border-[3px] border-black bg-grey"/>
+        
+        <button onclick="window.secretModal.showModal();">🤫</button>
+        <dialog id="secretModal"> 
+            <p>This is a secret modal.</p>
+            <button onclick="window.secretModal.close()">Close</button>
+        </dialog>
+
         <div class="flex flex-col gap-4 text-justify">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non diam phasellus vestibulum lorem sed risus ultricies. Est ante in nibh mauris cursus mattis. Viverra adipiscing at in tellus integer feugiat scelerisque. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse. Tellus in hac habitasse platea dictumst vestibulum. Hac habitasse platea dictumst quisque sagittis purus sit amet. Varius duis at consectetur lorem. Pulvinar elementum integer enim neque volutpat ac. Arcu odio ut sem nulla pharetra diam sit.
