@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro'; 
 import memoji from '../assets/memoji-laptop.png'; 
+import placeholder from '../assets/placeholder.png';
 
 const updates = { 
     'Employment': "job search status", 
@@ -25,8 +26,46 @@ const lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
         
         <button onclick="window.secretModal.showModal();">🤫</button>
         <dialog id="secretModal"> 
-            <p>This is a secret modal.</p>
             <button onclick="window.secretModal.close()">Close</button>
+            <div>
+                <img  src={placeholder} alt=""/>
+                <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,</p>
+            </div>
+
+            <div>
+                <img  src={placeholder} alt=""/>
+                <p>Sed enim ut sem viverra aliquet eget sit,<br /> Lectus quam id leo in vitae.</p>
+            </div>
+
+            <div>
+                <img  src={placeholder} alt=""/>
+                <p>Turpis massa praesent elementum facilisis.<br /> Leo vel fringilla est ullamcorper eget nulla.</p>                
+            </div>
+
+            <div>
+                <img  src={placeholder} alt=""/>
+                <p>Adipiscing vitae proin sagittis nisl.<br /> Rhoncus mattis.</p>
+            </div>
+
+            <div>
+                <img  src={placeholder} alt=""/>
+                <p>Eu scelerisque felis imperdiet proi,<br /> Frmentum leo vel orci	porta.</p>
+            </div>
+
+            <div>
+                <img  src={placeholder} alt=""/>
+                <p>Vitae congue mauris,<br /> Rhoncus aenean vel elt.</p>
+            </div>
+
+            <div>
+                <img  src={placeholder} alt=""/>
+                <p>Ut tortor pretium viverra.<br /> Suspendisse potenti nullam ac.</p>                
+            </div>
+
+            <div>
+                <img  src={placeholder} alt=""/>
+                <p>Cursus sit amet dictum sit amet.<br /> Elementum eu facilisis sed odio morbi.</p>
+            </div>
         </dialog>
 
         <div class="flex flex-col gap-4 text-justify">
