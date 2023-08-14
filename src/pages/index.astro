@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'; 
 import memoji from '../assets/memoji-laptop.png'; 
 import placeholder from '../assets/placeholder.png';
+import { Icon } from 'astro-icon';
 
 const updates = { 
     'Employment': "job search status", 
@@ -26,7 +27,9 @@ const lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
         
         <button onclick="window.secretModal.showModal();">🤫</button>
         <dialog id="secretModal"> 
-            <button onclick="window.secretModal.close()">Close</button>
+            <button onclick="window.secretModal.close()" >
+                <Icon name="mdi:close" />
+            </button>
             <div>
                 <img  src={placeholder} alt=""/>
                 <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,</p>
