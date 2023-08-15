@@ -2,14 +2,12 @@
 import { Icon } from 'astro-icon'; 
 const { headerMessage } = Astro.props; 
 ---
-<header class="sticky top-0 px-2 py-4 z-50">
+<header class="sticky top-0 px-2 py-4 z-40">
     <div class='flex flex-row justify-between items-center rounded-full bg-white border-[3px] border-black drop-shadow-lg'>
         <a class="flex justify-center items-center w-8 h-8 m-2 p-1 rounded-full font-montserrat font-medium text-sm bg-yellow border-[2px] border-black" href="/">
             J
         </a>
-        <p class="font-bayon text-base">
-            {headerMessage}
-        </p>
+        <p id="headerMessageEle" class="font-bayon text-base"></p>
         <button id="mobile-menu-button" class="relative w-8 h-8 m-2 p-1 rounded-full bg-yellow border-[2px] border-black">
             <Icon class='' name="mdi:menu" />
         </button>
@@ -24,7 +22,7 @@ const { headerMessage } = Astro.props;
     </div>
 </header>
 
-<script>
+<script define:vars={{headerMessage}}>
     const mobileMenuButton = document.getElementById("mobile-menu-button"); 
     mobileMenuButton.addEventListener("click", toggleMobileMenu); 
     
@@ -33,4 +31,14 @@ const { headerMessage } = Astro.props;
         mobileMenu.classList.toggle("hidden");
         mobileMenu.classList.toggle("flex");
     }
+
+    const headerMessageEle = document.getElementById("headerMessageEle");
+    window.addEventListener("scroll", function () {
+        let scrollAmount = window.scrollY;
+        if (scrollAmount > 86) {
+            headerMessageEle.innerHTML = headerMessage;
+        } else {
+            headerMessageEle.innerHTML = ''
+        }
+    });
 </script>
