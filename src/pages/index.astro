@@ -21,10 +21,10 @@ const lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
 ---
 
 <Layout headerMessage="Hey Oh! I'm Jon. 👋"> 
-    <div class="flex flex-col gap-6 justify-center items-center px-5 py-12 font-montserrat text-base/snug">
+    <div class="flex flex-col gap-6 justify-center items-center p-12 font-montserrat text-base/snug max-w-screen-lg mx-auto">
         <div class="relative">
-            <img src={memoji} class="w-20 rounded-2xl border-[3px] border-black bg-grey"/>
-            <button onclick="window.secretModal.showModal();"  class="absolute left-0 right-0 mx-auto bottom-1.5 w-[20px] aspect-square"></button>
+            <img src={memoji} class="w-20 rounded-2xl border-[3px] border-black bg-grey sm:w-40"/>
+            <button onclick="window.secretModal.showModal();"  class="absolute left-0 right-0 mx-auto bottom-1.5 w-[20px] aspect-square sm:bottom-5"></button>
             <SecretModal />
         </div>
     
