@@ -5,13 +5,13 @@ import Divider from "../assets/Divider.astro";
 ---
 
 <Layout headerMessage="/About">
-	<div class="px-12 pt-16 pb-12 flex flex-col gap-6 justify-start items-start font-montserrat text-base/snug text-justify max-w-screen-lg mx-auto">
-		<div>
+	<div class="px-12 pt-16 pb-12 flex flex-col gap-6 justify-start items-start font-montserrat text-base/snug text-justify max-w-screen-lg mx-auto sm:gap-10">
+		<div class="w-full">
 			<h1 class="font-bayon text-4xl">/About</h1>
 			<h2>Get to know me a little better.</h2>
 		</div>
 
-		<div>
+		<div class="w-full">
 			<h3 class="font-bayon text-xl">Engineering Journey</h3>
 			<div class="text-base/snug space-y-5">
 				<p>
@@ -116,8 +116,8 @@ import Divider from "../assets/Divider.astro";
 			</div>
 		</div>
 
-		<div>
-			<h3 class="font-bayon text-xl">When I'm not coding, I'm...</h3>
+		<div class="w-full">
+			<h3 class="font-bayon text-xl text-left">When I'm not coding, I'm...</h3>
 			<ul class="list-disc list-inside px-5">
 				<li class="relative before:-ml-3 pb-1">hobby</li>
 				<li class="relative before:-ml-3 pb-1">hobby</li>
@@ -128,8 +128,8 @@ import Divider from "../assets/Divider.astro";
 			</ul>
 		</div>
 
-		<div>
-			<h3 class="font-bayon text-xl">I like scrolling through...</h3>
+		<div class="w-full">
+			<h3 class="font-bayon text-xl text-left">I like scrolling through...</h3>
 			<ul class="list-disc list-inside px-5">
 				<li class="relative before:-ml-3 pb-1">hobby</li>
 				<li class="relative before:-ml-3 pb-1">hobby</li>
@@ -140,20 +140,22 @@ import Divider from "../assets/Divider.astro";
 			</ul>
 		</div>
 
-		<div>
-			<h3 class="font-bayon text-xl">Me in 10 words according to my totally unbiased gf:</h3>
-			<div class="relative ml-[10px] mb-[10px] max-w-[350px] aspect-[10/11] mx-auto border-black border-[3px] rounded-xl bg-tenWords bg-cover bg-top bg-no-repeat">
-				<div
-					class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
-				/>
+		<div class="w-full space-y-2">
+			<h3 class="font-bayon text-xl text-left">Me in 10 words according to my totally unbiased gf:</h3>
+			<div class="flex justify-center">
+				<div class="relative grow ml-[10px] mb-[10px] max-w-[350px] aspect-[10/11] border-black border-[3px] rounded-xl bg-tenWords bg-cover bg-top bg-no-repeat">
+					<div
+						class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] !z-[-1]"
+					/>
+				</div>
 			</div>
 		</div>
 
-		<Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl p-5 max-w-xs sm:py-20" />
+		<Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl p-5 max-w-xs" />
 
-		<div class="flex flex-col justify-start items-center">
-			<div class="text-center">
-				<h3 class="font-bayon text-xl">That's all for now!</h3>
+		<div class="flex flex-col justify-start items-center w-full">
+			<div class="text-center max-w-lg mx-auto">
+				<h3 class="font-bayon text-2xl">That's all for now!</h3>
 				<p>
 					'preciate anyone who's made it this far. 🫶🏼<br/>I hid an easter egg
 					for you somewhere in the home page. You can get to it by solving
