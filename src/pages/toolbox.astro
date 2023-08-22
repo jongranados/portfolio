@@ -5,13 +5,14 @@ import { Icon } from "astro-icon";
 ---
 
 <Layout headerMessage="/toolbox" >
-        <div class="mx-5 mt-16 mb-8">
+    <div class="flex flex-col gap-6 justify-center items-center text-base/snug p-5 max-w-screen-md mx-auto min-w-min">
+        <div class="w-full">
             <h1 class="font-bayon text-4xl">/Toolbox</h1>
             <h2 class="font-montserrat text-base">The tools I build things with.</h2>
         </div>
 
-        <div class="mx-5 flex flex-col items-center gap-5">
-            <div class="max-w-full w-max">
+        <div class="w-full mx-5 flex flex-col items-center gap-5">
+            <div class="w-full min-w-min">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="mdi:language"
@@ -47,7 +48,7 @@ import { Icon } from "astro-icon";
 
             <Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl p-5 max-w-xs" />
 
-            <div class="max-w-full w-max">
+            <div class="w-full min-w-min">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="healthicons:ui-menu-grid-outline"
@@ -107,7 +108,7 @@ import { Icon } from "astro-icon";
 
             <Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl p-5 max-w-xs" />
 
-            <div class="max-w-full w-max">
+            <div class="w-full min-w-min">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="mdi:database-outline"
@@ -158,7 +159,7 @@ import { Icon } from "astro-icon";
 
             <Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl p-5 max-w-xs" />
             
-            <div class="max-w-full w-max">
+            <div class="w-full min-w-min">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="mdi:design"
@@ -276,7 +277,7 @@ import { Icon } from "astro-icon";
 
             <Divider twClasses="w-1/2 mx-auto fill-current text-black drop-shadow-xl p-5 max-w-xs" />
 
-            <div class="max-w-full w-max">
+            <div class="w-full min-w-min">
                 <div class="flex flex-row py-2 gap-2 items-center">
                     <Icon
                         name="uit:ellipsis-h"
@@ -464,4 +465,5 @@ import { Icon } from "astro-icon";
                 </div>
             </div>
         </div>
+    </div>
 </Layout>
