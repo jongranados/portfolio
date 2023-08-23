@@ -41,19 +41,19 @@ const lastUpdated = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
                 class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
             >
             </div>
-            <h2 class="px-3 py-1 font-bayon text-xl">
+            <h2 class="px-3 py-1 sm:py-2 font-bayon text-xl sm:text-2xl">
                 What I'm up to:
             </h2>
 
-            <ul class="list-disc list-inside px-5">
+            <ul class="list-disc list-inside px-5 sm:px-10">
                 {
                     Object.keys(updates).map(title => { 
                         const description = updates[title]; 
-                        return <li class="relative before:-ml-3 py-1"><span class='font-bayon'>{title}: </span>{description}</li>
+                        return <li class="relative before:-ml-3 sm:before:-ml-1 py-1"><span class='font-bayon'>{title}: </span>{description}</li>
                     })
                 }
             </ul>
-            <p class="px-3 py-1">
+            <p class="px-3 py-1 sm:py-2">
                 <span class='font-bayon'>Last updated: </span><span class="underline">{lastUpdated}</span>
             </p>
         </div>
