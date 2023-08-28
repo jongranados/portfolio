@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon";
-const { title, description, highlights, techStack } = Astro.props.projectData;
+const { title, description, highlights, tools, liveUrl, githubUrl } = Astro.props.projectData;
 ---
 
 <div
@@ -17,13 +17,13 @@ const { title, description, highlights, techStack } = Astro.props.projectData;
 			class="absolute flex flex-row justify-between items-center left-0 right-0 bottom-0 mx-auto translate-y-[50%] max-w-[300px] max-h-[100px] w-min border-[3px] bg-white rounded-full border-black"
 		>
 			<a
-				href=""
+				href={liveUrl}
 				class="w-8 h-8 rounded-full m-1 p-1 bg-yellow border-[2px] border-black hover:bg-yellow hover:border-black active:bg-black active:border-yellow active:text-yellow"
 			>
 				<Icon name="mdi:play" />
 			</a>
 			<a
-				href=""
+				href={githubUrl}
 				class="w-8 h-8 rounded-full m-1 p-1 bg-yellow border-[2px] border-black hover:bg-yellow hover:border-black active:bg-black active:border-yellow active:text-yellow"
 			>
 				<Icon name="raphael:github" />
@@ -38,7 +38,7 @@ const { title, description, highlights, techStack } = Astro.props.projectData;
 			<p>• • • • •</p>
 			<p>{highlights.join(' • ')}</p>
 			<p>• • • • •</p>
-			<p>{techStack.join(' • ')}</p>
+			<p>{tools.join(' • ')}</p>
 		</div>
 	</div>
 </div>
