@@ -1,6 +1,15 @@
 ---
 import ProjectCard from "../components/ProjectCard.astro";
 import Layout from "../layouts/Layout.astro";
+
+const projectsData = [
+    {
+        title: 'A Project Title', 
+        description: 'A sentence or two brielf describing the project.', 
+        highlights: ['Hightlight A', 'Hightlight B', 'Hightlight C', 'Hightlight D'], 
+        techStack: ['Tech A', 'Tech B', 'Tech C', 'Tech D', 'Tech E', 'Tech F', 'Tech G', 'Tech H'], 
+    },
+]
 ---
 
 <Layout headerMessage="/projects">
@@ -11,11 +20,9 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div class="w-full flex flex-row flex-wrap justify-center items-center gap-10">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {
+                projectsData.map(projectData => <ProjectCard projectData={projectData} />)
+            }
         </div>
     </div>
 </Layout>

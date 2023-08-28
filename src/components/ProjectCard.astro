@@ -1,6 +1,8 @@
 ---
 import { Icon } from "astro-icon";
+const { title, description, highlights, techStack } = Astro.props.projectData;
 ---
+
 <div
 	class="relative ml-[10px] mb-[10px] max-w-full border-[3px] border-black rounded-xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat md:max-w-[330px]"
 >
@@ -8,7 +10,6 @@ import { Icon } from "astro-icon";
 		class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
 	>
 	</div>
-
 	<div
 		class="relative content-[''] mx-[10%] mt-[10%] aspect-[5/3] border-x-[3px] border-t-[3px] border-black bg-placeholder bg-cover bg-top bg-no-repeat"
 	>
@@ -32,13 +33,12 @@ import { Icon } from "astro-icon";
 
 	<div class="m-0 h-1/2 border-t-[3px] border-black rounded-b-lg bg-white">
 		<div class="font-montserrat leading-snug pt-5 pb-2 px-5">
-			<h3 class="font-bayon text-lg">Title</h3>
-			<p>A sentence or two briefly describing the project.</p>
+			<h3 class="font-bayon text-lg">{title}</h3>
+			<p>{description}</p>
 			<p>• • • • •</p>
-			<p>
-				Tech A • Tech B • Tech C • Tech D • Tech E • Tech F • Tech G •
-				Tech H • Tech I • Tech J • Tech I • Tech K
-			</p>
+			<p>{highlights.join(' • ')}</p>
+			<p>• • • • •</p>
+			<p>{techStack.join(' • ')}</p>
 		</div>
 	</div>
 </div>
