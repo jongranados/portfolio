@@ -33,12 +33,18 @@ const { title, description, highlights, tools, liveUrl, githubUrl } = Astro.prop
 
 	<div class="m-0 h-1/2 border-t-[3px] border-black rounded-b-lg bg-white">
 		<div class="font-montserrat leading-snug pt-5 pb-2 px-5">
-			<h3 class="font-bayon text-lg">{title}</h3>
-			<p>{description}</p>
-			<p>• • • • •</p>
-			<p>{highlights.join(' • ')}</p>
-			<p>• • • • •</p>
-			<p>{tools.join(' • ')}</p>
+			<div>
+				<h3 class="font-bayon text-lg">{title}</h3>
+				<p>{description}</p>
+			</div>
+			<div>
+				<h3 class="font-bayon">Key takeaways</h3>
+				<span>{highlights.join(' • ')}</span>
+			</div>
+			<div>
+				<h3 class="font-bayon">Built with</h3>
+				<p>{tools.join(' • ')}</p>
+			</div>
 		</div>
 	</div>
 </div>
