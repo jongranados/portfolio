@@ -4,7 +4,7 @@ const { title, description, highlights, tools, liveUrl, githubUrl, bgName } = As
 ---
 
 <div
-	class="relative ml-[10px] mb-[10px] max-w-full border-[3px] border-black rounded-xl bg-[radial-gradient(#D9D9D9_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat md:max-w-[330px]"
+	class="relative flex flex-col ml-[10px] mb-[10px] w-full border-[3px] border-black rounded-xl bg-[radial-gradient(#E4E4E4_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat lg:max-w-[460px]"
 >
 	<div
 		class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
@@ -31,8 +31,8 @@ const { title, description, highlights, tools, liveUrl, githubUrl, bgName } = As
 		</div>
 	</div>
 
-	<div class="m-0 h-1/2 border-t-[3px] border-black rounded-b-lg bg-white">
-		<div class="font-montserrat leading-snug pt-5 pb-2 px-5">
+	<div class="grow m-0 h-min border-t-[3px] border-black rounded-b-lg bg-white">
+		<div class="font-montserrat leading-snug pt-5 pb-2 px-5 space-y-4">
 			<div>
 				<h2 class="font-bayon text-lg">{title}</h2>
 				<p>{description}</p>
