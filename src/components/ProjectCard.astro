@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon";
-const { title, description, highlights, tools, liveUrl, githubUrl, bgName } = Astro.props.projectData;
+const { title, description, highlights, tools, liveUrl, githubUrl, bgName, ongoing } = Astro.props.projectData;
 ---
 
 <div
@@ -32,7 +32,10 @@ const { title, description, highlights, tools, liveUrl, githubUrl, bgName } = As
 	</div>
 
 	<div class="grow m-0 h-min border-t-[3px] border-black rounded-b-lg bg-white">
-		<div class="font-montserrat leading-snug pt-5 pb-2 px-5 space-y-4">
+		<div class="relative font-montserrat leading-snug pt-5 pb-2 px-5 space-y-4">
+			{ongoing && (
+				<div class="absolute top-1 right-1 px-3 py-1 bg-black text-white rounded-md font-semibold">ongoing</div>
+			)}
 			<div>
 				<h2 class="font-bayon text-lg">{title}</h2>
 				<p>{description}</p>
