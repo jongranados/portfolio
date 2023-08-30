@@ -37,11 +37,11 @@ const updates = {
                 What I'm up to:
             </h2>
 
-            <ul class="list-disc list-inside px-5 sm:px-10">
+            <ul class="list-disc list-inside space-y-1 px-5 sm:px-10">
                 {
                     Object.keys(updates).map(title => { 
                         const description = updates[title]; 
-                        return <li class="relative before:-ml-3 sm:before:-ml-1 py-1"><span class='font-bayon'>{title}: </span>{description}</li>
+                        return <li><span class='font-bayon'>{title}: </span>{description}</li>
                     })
                 }
             </ul>
