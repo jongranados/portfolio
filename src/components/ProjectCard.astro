@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon";
-const { title, description, highlights, tools, liveUrl, githubUrl, bgName, ongoing } = Astro.props.projectData;
+const { title, description, takeaways, tools, liveUrl, githubUrl, bgName, ongoing } = Astro.props.projectData;
 ---
 
 <div
@@ -42,7 +42,7 @@ const { title, description, highlights, tools, liveUrl, githubUrl, bgName, ongoi
 			</div>
 			<div>
 				<h3 class="font-bayon">Key takeaways</h3>
-				<span>{highlights.join(' • ')}</span>
+				<span>{takeaways.join(' • ')}</span>
 			</div>
 			<div>
 				<h3 class="font-bayon">Built with</h3>
