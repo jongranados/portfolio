@@ -1,36 +1,35 @@
 ---
 import { Icon } from 'astro-icon'; 
-const { headerMessage } = Astro.props; 
 const { pathname } = Astro.url; 
 ---
 <header class="sticky top-0 px-2 py-4 z-40 max-w-screen-xl mx-auto w-full h-full">
     <div class='flex flex-row justify-between items-center rounded-full bg-white border-[3px] border-black drop-shadow-lg'>
-        <a href="/" class="flex justify-center items-center w-8 h-8 m-2 p-1 rounded-full font-montserrat font-medium text-sm bg-yellow border-[2px] border-black hover:bg-yellow hover:border-black active:bg-black active:border-yellow active:text-yellow">
+        <a href="/" class="flex justify-center items-center w-8 h-8 m-2 p-1 rounded-full font-montserrat font-medium text-sm bg-yellow border-[2px] border-black active:bg-black active:border-yellow active:text-yellow">
             J
         </a>
         <p id="headerMessageEle" class="font-bayon absolute left-0 right-0 text-center text-base -z-10">
-            {pathname === '/' ? headerMessage : ''}
+            Hey! I'm Jon. 👋
         </p>
         <nav class="hidden md:block mr-2 space-x-1">
-            <a href="/projects" class="px-2 py-1 relative font-medium font-montserrat rounded-full hover:bg-yellow hover:border-black border-[2px] border-transparent active:bg-black active:border-yellow active:text-yellow">Projects</a>
-            <a href="/toolbox" class="px-2 py-1 relative font-medium font-montserrat rounded-full hover:bg-yellow hover:border-black border-[2px] border-transparent active:bg-black activ:-border-yellow active:text-yellow">Toolbox</a>
-            <a href="/about" class="px-2 py-1 relative font-medium font-montserrat rounded-full hover:bg-yellow hover:border-black border-[2px] border-transparent active:bg-black active:border-yellow active:text-yellow">About</a>
+            <a href="#toolbox" class="px-2 py-1 relative font-medium font-montserrat rounded-full bg-yellow border-black border-[2px] active:bg-black activ:-border-yellow active:text-yellow">Toolbox</a>
+            <a href="#projects" class="px-2 py-1 relative font-medium font-montserrat rounded-full bg-yellow border-black border-[2px] active:bg-black active:border-yellow active:text-yellow">Projects</a>
+            <a href="#about-me" class="px-2 py-1 relative font-medium font-montserrat rounded-full bg-yellow border-black border-[2px] active:bg-black active:border-yellow active:text-yellow">About</a>
         </nav>
-        <button id="mobile-menu-button" class="relative md:hidden w-8 h-8 m-2 p-1 rounded-full bg-yellow border-[2px] border-black hover:bg-yellow hover:border-black active:bg-black active:border-yellow active:text-yellow">
+        <button id="mobile-menu-button" class="relative md:hidden w-8 h-8 m-2 p-1 rounded-full bg-yellow border-[2px] border-black active:bg-black active:border-yellow active:text-yellow">
             <Icon class='' name="mdi:menu" />
         </button>
 
         <div id="mobile-menu" class="absolute right-0 bottom-0 translate-y-[96%] border-[3px] font-bayon text-3xl hidden flex-col border-black bg-white rounded-xl shadow-xl"> 
-            <a href="/projects" class="px-4 py-2 active:bg-black active:border-yellow active:text-yellow">Projects</a>
+            <a href="#toolbox" class="px-4 py-2 active:bg-black active:border-yellow active:text-yellow">Toolbox</a>
             <hr style="border-top: dashed 2px;"  class="mx-auto w-[85%] text-yellow" />
-            <a href="/toolbox" class="px-4 py-2 active:bg-black active:border-yellow active:text-yellow">Toolbox</a>
+            <a href="#projects" class="px-4 py-2 active:bg-black active:border-yellow active:text-yellow">Projects</a>
             <hr style="border-top: dashed 2px;"  class="mx-auto w-[85%] text-yellow" />
-            <a href="/about" class="px-4 py-2 active:bg-black active:border-yellow active:text-yellow">About</a>
+            <a href="#about-me" class="px-4 py-2 active:bg-black active:border-yellow active:text-yellow">About</a>
         </div>
     </div>
 </header>
 
-<script define:vars={{headerMessage, pathname}}>
+<script>
     const mobileMenuButton = document.getElementById("mobile-menu-button"); 
     mobileMenuButton.addEventListener("click", toggleMobileMenu); 
     
@@ -39,14 +38,4 @@ const { pathname } = Astro.url;
         mobileMenu.classList.toggle("hidden");
         mobileMenu.classList.toggle("flex");
     }
-
-    const headerMessageEle = document.getElementById("headerMessageEle");
-    window.addEventListener("scroll", function () {
-        let scrollAmount = window.scrollY;
-        if (scrollAmount > 150 || pathname === '/') {
-            headerMessageEle.innerHTML = headerMessage;
-        } else {
-            headerMessageEle.innerHTML = ''
-        }
-    });
 </script>

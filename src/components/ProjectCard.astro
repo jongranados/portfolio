@@ -14,7 +14,7 @@ const { title, description, takeaways, tools, liveUrl, githubUrl, bgName, ongoin
 		class={`relative content-[''] w-4/5 aspect-[5/3] mx-auto mt-[10%] border-x-[3px] border-t-[3px] border-black ${bgName} bg-cover bg-top bg-no-repeat`}
 	>
 		<div
-			class="absolute flex flex-row justify-between items-center left-0 right-0 bottom-0 mx-auto translate-y-[50%] max-w-[300px] max-h-[100px] w-min border-[3px] bg-white rounded-full border-black"
+			class="absolute flex flex-row justify-between items-center left-0 right-0 bottom-0 mx-auto translate-y-[50%] max-w-[300px] max-h-[100px] w-min border-[3px] bg-white rounded-full border-black z-10"
 		>
 			<a
 				href={liveUrl}
@@ -32,9 +32,9 @@ const { title, description, takeaways, tools, liveUrl, githubUrl, bgName, ongoin
 	</div>
 
 	<div class="grow m-0 h-min border-t-[3px] border-black rounded-b-lg bg-white">
-		<div class="relative font-montserrat leading-snug pt-5 pb-2 px-5 space-y-4">
+		<div class="relative font-montserrat leading-snug text-left pt-5 pb-2 px-5 space-y-4">
 			{ongoing && (
-				<div class="absolute top-1 right-1 px-3 py-1 bg-black text-white rounded-md font-semibold">ongoing</div>
+				<div class="absolute top-1 right-1 px-3 py-1 bg-black text-white rounded-md font-semibold">in progress</div>
 			)}
 			<div>
 				<h2 class="font-bayon text-lg">{title}</h2>
