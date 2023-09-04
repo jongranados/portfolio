@@ -1,5 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro'; 
+import Layout from '../layouts/Layout.astro';
+import AboutMe from './about.astro'; 
+import Projects from './projects.astro'; 
+import Toolbox from './toolbox.astro'; 
+
 import memoji from '/memoji-laptop.png'; 
 import SecretModal from '../components/SecretModal.astro';
 
@@ -12,8 +16,8 @@ const updates = {
 }
 ---
 
-<Layout headerMessage="Hey! I'm Jon. 👋"> 
-    <div class="flex flex-col gap-6 justify-center items-center p-5 my-10 md:my-14 font-montserrat text-base/snug max-w-screen-lg mx-auto min-w-min md:gap-10">
+<Layout> 
+    <section id="tldr" class="flex flex-col gap-6 justify-center items-center p-5 my-10 md:my-14 font-montserrat text-base/snug max-w-screen-lg mx-auto min-w-min md:gap-10">
         <div class="relative">
             <img src={memoji} class="w-20 rounded-2xl border-[3px] border-black bg-grey sm:w-40 bg-[radial-gradient(#E4E4E4_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat"/>
             <button onclick="window.secretModal.showModal();"  class="absolute left-0 right-0 mx-auto bottom-0 w-[30px] aspect-square sm:bottom-3"></button>
@@ -49,7 +53,9 @@ const updates = {
                 <span class='font-bayon'>Last updated: </span>August 2023
             </p>
         </div>
-    </div>
+    </section>
 
-
+    <section id="toolbox"><Toolbox /></section>
+    <section id="projects"><Projects /></section>
+    <section id="about-me"><AboutMe /></section>
 </Layout>
