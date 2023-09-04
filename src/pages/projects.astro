@@ -1,0 +1,68 @@
+---
+import ProjectCard from "../components/ProjectCard.astro";
+import Layout from "../layouts/Layout.astro";
+
+const projectsData = [
+    {
+        title: 'Smart Shopping List',
+        description: 'A smart shopping companion that learns from your buying habits so that you never run out of the things you need.',
+        takeaways: ['collaboration', 'technical documentation', 'CI/CD', 'agile workflow', 'development lifecycle', 'version control', 'career readiness', 'web accessibility'],
+        tools: ['Firestore', 'React', 'React Router', 'Material UI', 'GIT'],
+        liveUrl: 'https://my-smart-shopping-list.onrender.com', 
+        githubUrl: 'https://github.com/jongranados/smart-shopping-list', 
+        bgName: 'bg-smartShoppingList',
+    },
+    {
+        title: 'Social Pets',
+        description: 'A full-featured social media application for our four-legged friends.',
+        takeaways: ['full stack development', 'database schema design', 'CRUD apps', 'RESTful APIs', 'authentication', 'front-end and back-end data validation for redundancy', 'how to think like a SWE'],
+        tools: ['React', 'React Router', 'Redux', 'Material UI', 'Formik', 'Yup', 'Node.js', 'Express.js', 'Sequelize', 'PostgreSQL'],
+        liveUrl: 'https://social-pets.onrender.com', 
+        githubUrl: 'https://github.com/jongranados/social-pets', 
+        bgName: 'bg-socialPets',
+        ongoing: true, 
+    },
+    {
+        title: 'Portfolio',
+        description: "I commissioned myself to design and build my portfolio website. 😂 I'm including this because I learned a lot from this project!",
+        takeaways: ['UI/UX', 'design', 'wireframing', 'prototyping', 'mockup-based development', 'mobile-first development', "static websites don't have to suck", 'deployment', 'the importance of choosing the right tools for the job (not everything should be a Create React App)'],
+        tools: ['Astro', 'JavaScript', 'Tailwind CSS', 'Figma', 'Render'],
+        liveUrl: 'https://jongranados.onrender.com/', 
+        githubUrl: 'https://github.com/jongranados/portfolio', 
+        bgName: 'bg-portfolioWebsite',
+    },
+    {
+        title: 'Authenticate Me',
+        description: 'A simple application demonstrating a common full-stack design pattern for account creation, logging in, logging out, and user authentication.',
+        takeaways: ['first full stack project', 'authentication'],
+        tools: ['React', 'React Router', 'Redux', 'Tailwind CSS', 'Express.js', 'Sequelize', 'PostgreSQL', 'bcrypt', 'CORS', 'CSURF', 'JWT'],
+        liveUrl: 'https://authenticate-me-iocy.onrender.com', 
+        githubUrl: 'https://github.com/jongranados/authenticate-me', 
+        bgName: 'bg-authenticateMe',
+    },
+    {
+        title: 'Pixel-Perfect Instacart',
+        description: 'A pixel-perfect copy of the Instacart homepage built with the basics.',
+        takeaways: ['mockup-based development', 'CSS is powerful'],
+        tools: ['HTML', 'CSS'],
+        liveUrl: 'https://pixel-perfect-instacart.onrender.com', 
+        githubUrl: 'https://github.com/jongranados/pixel-perfect-project', 
+        bgName: 'bg-pixelPerfectInstacart', 
+    },
+];
+---
+
+<Layout headerMessage="/projects">
+    <div class="flex flex-col gap-6 justify-center items-center text-base/snug p-5 my-10 md:my-14 max-w-screen-lg mx-auto min-w-min md:gap-10">
+        <div class="w-full">
+            <h1 class="font-bayon text-4xl">/Projects</h1>
+            <p class="font-montserrat text-base">Some of the work I'm most proud of.</p>
+        </div>
+
+        <div class="w-full flex flex-row flex-wrap justify-center items-stretch gap-10">
+            {
+                projectsData.map(projectData => <ProjectCard projectData={projectData} />)
+            }
+        </div>
+    </div>
+</Layout>

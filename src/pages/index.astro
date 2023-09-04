@@ -1,1 +1,55 @@
-<h1>Hello World!</h1>
+---
+import Layout from '../layouts/Layout.astro'; 
+import memoji from '/memoji-laptop.png'; 
+import SecretModal from '../components/SecretModal.astro';
+
+const updates = { 
+    'Job Search': "starting LeetCode, prepping for interviews, and applying to jobs", 
+    'Projects': "wrapping up personal website and portfolio projects", 
+    'Learning': "Astro, Next.js, Prisma, and deployment to Render", 
+    'Family': "taking the pups to the beach on the weekends", 
+    'Rabbit hole': "award travel and credit card churning", 
+}
+---
+
+<Layout headerMessage="Hey! I'm Jon. 👋"> 
+    <div class="flex flex-col gap-6 justify-center items-center p-5 my-10 md:my-14 font-montserrat text-base/snug max-w-screen-lg mx-auto min-w-min md:gap-10">
+        <div class="relative">
+            <img src={memoji} class="w-20 rounded-2xl border-[3px] border-black bg-grey sm:w-40 bg-[radial-gradient(#E4E4E4_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat"/>
+            <button onclick="window.secretModal.showModal();"  class="absolute left-0 right-0 mx-auto bottom-0 w-[30px] aspect-square sm:bottom-3"></button>
+            <SecretModal />
+        </div>
+    
+        <div class="flex flex-col gap-4 text-justify">
+            <p>
+                I'm a full stack software engineer with a background in mechanical engineering and I'm passionate about building beautiful products and memorable experiences through hardware and software. I'm based in the Bay Area and I'm looking for full-time opportunities to join a team of cool people working on interesting problems. I enjoy programming in JavaScript with the PERN stack but my fundamentals are strong and I'm confident that I can quickly ramp-up to productivity and become an asset to any technical team (cue <a href="https://genius.com/12269807" target="_blank" class="underline">Jay-Z and Shakespeare on surmising confidence</a> 😅). I'm hardworking, meticulous, practical, adaptable, and a team player.
+            </p>
+            <p>
+                Drop me a message if I sound like a good fit for your team!
+            </p>
+        </div>
+        <div class="relative ml-[10px] mb-[10px] flex flex-col w-full border-[3px] border-black rounded-xl bg-[radial-gradient(#E4E4E4_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat">
+            <div
+                class="absolute inset-[10px_10px_-10px_-10px] content-[''] rounded-xl bg-[repeating-linear-gradient(-45deg,black_0_3px,transparent_0_10px)] z-[-1]"
+            >
+            </div>
+            <h2 class="px-3 py-1 sm:py-2 font-bayon text-xl sm:text-2xl">
+                What I'm up to:
+            </h2>
+
+            <ul class="list-disc list-inside space-y-1 px-5 sm:px-10">
+                {
+                    Object.keys(updates).map(title => { 
+                        const description = updates[title]; 
+                        return <li><span class='font-bayon'>{title}: </span>{description}</li>
+                    })
+                }
+            </ul>
+            <p class="px-3 py-1 sm:py-2">
+                <span class='font-bayon'>Last updated: </span>August 2023
+            </p>
+        </div>
+    </div>
+
+
+</Layout>
