@@ -17,8 +17,8 @@ const updates = {
 ---
 
 <Layout> 
-    <section id="tldr" class="flex flex-col gap-6 justify-center items-center p-5 my-10 md:my-14 font-montserrat text-base/snug max-w-screen-lg mx-auto min-w-min md:gap-10">
-        <div class="relative">
+    <section id="tldr" class="flex flex-col gap-6 justify-start items-center px-5 py-10 font-montserrat text-base/snug max-w-screen-lg mx-auto min-w-min md:gap-10">
+        <div class="relative mt-5 md:mt-10">
             <img src={memoji} class="w-20 rounded-2xl border-[3px] border-black bg-grey sm:w-40 bg-[radial-gradient(#E4E4E4_1px,#F2F2F2_0)] bg-[length:5px_5px] bg-repeat"/>
             <button onclick="window.secretModal.showModal();"  class="absolute left-0 right-0 mx-auto bottom-0 w-[30px] aspect-square sm:bottom-3"></button>
             <SecretModal />
@@ -55,7 +55,7 @@ const updates = {
         </div>
     </section>
 
-    <section id="toolbox"><Toolbox /></section>
-    <section id="projects"><Projects /></section>
-    <section id="about-me"><AboutMe /></section>
+    <section id="toolbox" class="flex flex-col justify-start items-center gap-6 px-5 py-10 font-montserrat text-justify text-base/snug max-w-screen-lg mx-auto min-w-min md:gap-10"><Toolbox /></section>
+    <section id="projects" class="flex flex-col justify-start items-center gap-6 px-5 py-10 font-montserrat text-justify text-base/snug max-w-screen-lg mx-auto min-w-min md:gap-10"><Projects /></section>
+    <section id="about-me" class="flex flex-col justify-start items-center gap-6 px-5 py-10 font-montserrat text-justify text-base/snug max-w-screen-lg mx-auto min-w-min md:gap-10"><AboutMe /></section>
 </Layout>
