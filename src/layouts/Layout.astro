@@ -20,7 +20,7 @@ const { title = "Jon Granados - Engineer", headerMessage } = Astro.props as Prop
         <title>{title}</title>
 	</head>
 	<body class='flex flex-col justify-between min-h-screen'> 
-        <Header headerMessage={headerMessage}/>
+        <Header />
         <slot />
         <Footer />
     </body>
