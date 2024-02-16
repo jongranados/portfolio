@@ -23,6 +23,7 @@ module.exports = {
 			portfolioWebsite: "url('/thumbnails/portfolio-website-project-bg.png')",
 			smartShoppingList: "url('/thumbnails/smart-shopping-list-project-bg.png')",
 			socialPets: "url('/thumbnails/social-pets-project-bg.png')",
+			digitalBattleship: "url('/thumbnails/digital-battleship-project-bg.png')",
 		},
 	},
 	plugins: [],
